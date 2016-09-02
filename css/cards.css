@@ -1,0 +1,47 @@
+.component-card{
+  position:relative;
+  border-radius: 5px;
+  padding:20px;
+}
+
+.component-card:hover{
+  box-shadow:0 0 100px rgba(0,0,0,.3);
+  background:#fff;
+  cursor:pointer;
+}
+
+/*Component Animations*/
+
+.component-card .card-content {
+	height:100%;
+	position:relative;
+  top: 0;
+  position: relative;
+  -webkit-transition: top 0.5s, bottom 0.5s;
+}
+
+.component-card .card-description{
+  height:50px;
+  overflow:hidden;
+  line-height:1.5em;
+}
+
+.component-card .card-details-left{
+	position:absolute;
+	bottom:20px;
+	left:20px;
+}
+.component-card .card-details-right{
+	position:absolute;
+	bottom:20px;
+	right:20px;
+}
+.component-card:hover .card-content {
+  top: -5.5em;
+}
+.component-card:hover img{
+  opacity: 0;
+}
+.component-card:hover .card-description{
+  height: 155px;
+}
